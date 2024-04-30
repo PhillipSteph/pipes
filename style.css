@@ -1,10 +1,11 @@
     body{
       overflow-x:hidden;
+      font-family:Arial;
     }
     div.header {
         height:calc(5vh);
         width:calc(88vw);
-        background-color: rgb(247, 247, 247);
+        background-color: #657d1c;
         padding-left:calc(1vw);
         padding-right:calc(1vw);
         padding-top:calc(9vh);
@@ -13,14 +14,14 @@
         border-radius: 20px;
         margin-right:calc(5vw);
         text-align: justify;
-        color:black;
+        color:white;
         position:fixed;
         top:0;
         font-size:90%;
         z-index:100;
         }
     div.header a{
-        color:black;
+        color:white;
         text-decoration: none;
         font-size:calc(1.5vw);
     }
@@ -150,7 +151,7 @@
   height:100%;
 }
 .righttext{
-  padding-top:5%;
+  padding-top:2%;
   width:calc(40vw);
   margin-right:10%;
   text-align: justify;
@@ -177,4 +178,43 @@
   margin-left:10%;
   width:calc(80vw);
   height:calc(40vw);
+}
+.kontakt{
+  padding-top:calc(1vh);
+  width:calc(80vw);
+  margin-left:10%;
+  margin-top:5%;
+  height: calc(40vw);
+  background-color: whitesmoke;
+  margin-bottom:5%;
+}
+.kontakt h2{
+  margin-left:5%;
+}
+.kontakt .left{
+  padding:calc(2vw);
+  padding-bottom: 0;
+  background-color: white;
+  width:calc(31vw);
+  height:calc(29vw);
+  margin-left:calc(3vw);
+  margin-right:calc(2vw);
+  text-align: justify;
+  float:left;
+  font-size:calc(1.5vw);
+}
+.kontakt .right{
+  padding:calc(2vw);
+  padding-bottom:0;
+  background-color: white;
+  width:calc(31vw);
+  height:calc(29vw);
+  margin-left:calc(2vw);
+  margin-right:calc(3vw);
+  text-align: justify;
+  float:left;
+  font-size:calc(1.5vw);
+}
+h2{
+  font-size:calc(2.5vw);
 }

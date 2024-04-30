@@ -16,6 +16,5 @@ setInterval(() => {
   if(index===4){
     index = 1;
   }
-  console.log(index);
   changeSlide(index);
 }, 4000);
