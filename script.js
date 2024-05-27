@@ -7,8 +7,8 @@ function scrollFunction() {
     document.getElementById("logo").style.top = "calc(0.1vh)";
 
   } else {
-    document.getElementById("logo").style.width = "calc(20vw)";
-    document.getElementById("logo").style.left = "calc(40vw)";
+    document.getElementById("logo").style.width = "calc(12vw)";
+    document.getElementById("logo").style.left = "calc(43.5vw)";
     document.getElementById("logo").style.top = "calc(2vh)";
 
   }
