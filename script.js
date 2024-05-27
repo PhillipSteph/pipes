@@ -13,6 +13,17 @@ function scrollFunction() {
 
   }
 }
+function isopen(n){
+  switch(n){
+    case 1:if(leftopened) return true;
+    break;
+    case 2:if(midopened) return true;
+    break;
+    case 3:if(rightopened) return true;
+    break;
+    default: break;
+  }
+}
 function changeSlide(n){
 const img1 = document.getElementById("img-1");
 const img2 = document.getElementById("img-2");

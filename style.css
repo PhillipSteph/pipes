@@ -1,6 +1,7 @@
     body{
       overflow-x:hidden;
       font-family:Arial;
+        padding-top:0;
       letter-spacing: calc(0.09vw);
     }
     div.header {
@@ -11,16 +12,18 @@
         padding-right:calc(1vw);
         padding-top:calc(9vh);
         margin-bottom:calc(-1vh);
-        margin-top:calc(-8.5vh);
+        margin-top:calc(-7.5vh);
         margin-left:calc(5vw);
         border-radius: calc(0.5vw);
         margin-right:calc(5vw);
         color:white;
         top:0;
         position:fixed;
+        left:0;
         z-index:100;
         }
     div.header span{
+      position:relative;
       margin-right:calc(3.1vw);
       margin-left:calc(3.1vw);
     }
@@ -36,7 +39,7 @@
       color: grey;
     }
     div.header span a{
-        text-shadow: 2px 2px #000000;
+        text-shadow: calc(0.1vw) calc(0.1vw) #000000;
         color:white;
         text-decoration: none;
         font-size:calc(1.45vw);
