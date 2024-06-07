@@ -108,7 +108,9 @@
         margin-bottom:5%;
     }
     h3{
+      margin-top:calc(0.8vw);
       font-size:calc(1.8vw);
+      margin-bottom:calc(0.5vw);
     }
     div.threeparts div.left{
         cursor:pointer;
@@ -141,7 +143,7 @@
     .orgimg{
         width:100%;
         height:auto;
-        margin-bottom:2%;
+        margin-bottom:0;
         transition:0.5s;
     }
     .altimg{
@@ -151,10 +153,10 @@
     }
     .text{
       width:90%;
-      height: 45%;
+      height: 51%;
       overflow:hidden;
       display: -webkit-box;
-    -webkit-line-clamp: 9;
+    -webkit-line-clamp: 10;
     -webkit-box-orient: vertical;
     }
     div.threeparts div.text{
@@ -175,6 +177,28 @@
   height: calc(40vw);
   background-color: whitesmoke;
   margin-bottom:5%;
+}
+.textfield{
+    width:calc(60vw);
+    margin-left:calc(10vw);
+    padding-left:calc(10vw);
+    padding-right:calc(10vw);
+    padding-top:calc(1vw);
+    margin-top:calc(6vw);
+    height: calc(75vw);
+    background-color: whitesmoke;
+    margin-bottom:calc(5vw);
+    margin-right:calc(5vw);
+    font-size:calc(1.3vw);
+}
+.textfield h2{
+  font-size:calc(1.5vw);
+}
+.textfield img{
+  width:calc(80vw);
+  margin-left:calc(-10vw);
+  margin-top:calc(-1vw);
+  margin-bottom:calc(2vw);
 }
 .leftimg{
   height:calc(40vw);
