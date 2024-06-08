@@ -1,16 +1,22 @@
 window.onscroll = function() {scrollFunction()};
-
 function scrollFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("logo").style.width = "calc(5vw)";
-    document.getElementById("logo").style.left = "calc(46.7vw)";
-    document.getElementById("logo").style.top = "calc(0.1vh)";
-
+    document.getElementById("logo").classList.add("smalllogo");
+    document.getElementById("logo").classList.remove("biglogo");
   } else {
-    document.getElementById("logo").style.width = "calc(12vw)";
-    document.getElementById("logo").style.left = "calc(43.5vw)";
-    document.getElementById("logo").style.top = "calc(2vh)";
-
+    document.getElementById("logo").classList.add("biglogo");
+    document.getElementById("logo").classList.remove("smalllogo");
+  }
+}
+function menu() {
+  var x = document.getElementById("myLinks");
+  var nav = document.getElementById("topnav");
+  if (x.style.display === "block") {
+    nav.style.height="calc(8vh)";
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+    nav.style.height="calc(55vh)";
   }
 }
 function isopen(n){
@@ -24,22 +30,12 @@ function isopen(n){
     default: break;
   }
 }
-function changeSlide(n){
-const img1 = document.getElementById("img-1");
-const img2 = document.getElementById("img-2");
-const img3 = document.getElementById("img-3");
-switch(n){
-    case 1: img1.style.zIndex = "1";img2.style.zIndex = "0";img3.style.zIndex = "0";break;
-    case 2: img1.style.zIndex = "0";img2.style.zIndex = "1";img3.style.zIndex = "0";break;
-    case 3: img1.style.zIndex = "0";img2.style.zIndex = "0";img3.style.zIndex = "1";break;
-    default: break;
-  }
-}
 leftopened=false;
 midopened=false;
 rightopened=false;
 originwidth="20%";
 function threeopen(n){
+  if(window.innerWidth<945)return;
 var threepartsimg1 = document.getElementById("thgimg1");
 var threepartsimg2 = document.getElementById("thgimg2");
 var threepartsimg3 = document.getElementById("thgimg3");
