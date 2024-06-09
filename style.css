@@ -459,14 +459,14 @@ p2{
    }
    .title{
        position:absolute;
-       font-size:calc(2vw + 2vh);
+       font-size:calc(5vw);
        color:white;
        text-shadow:calc(0.1vw) calc(0.1vw) black;
        font-weight:bold;
        letter-spacing: calc(0.3vw);
        line-height:calc(10vw);
        left:calc(4vw);
-       top: calc(35vw);
+       top: calc(12vh + 12vw);
        z-index:31;
    }
    .seperator{
