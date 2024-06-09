@@ -19,7 +19,7 @@
     }
     div.header {
         height:calc(5vh);
-        width:calc(86.5vw);
+        width:calc(88vw);
         background-color: #0a5807e2;
         padding-left:calc(1vw);
         padding-right:calc(1vw);
@@ -204,7 +204,7 @@
     padding-right:calc(10vw);
     padding-top:calc(1vw);
     margin-top:calc(6vw);
-    height: calc(75vw);
+    padding-bottom:calc(5vw);
     background-color: whitesmoke;
     margin-bottom:calc(5vw);
     margin-right:calc(5vw);
@@ -359,8 +359,8 @@ p2{
     position: fixed;
     top:calc(0vh);
     width:calc(104.5vw);
-    height:calc(8vh);
     left:calc(-2.5vw);
+    height:calc(8vh);
     z-index:32;
     box-shadow: 0px 3px 10px rgb(105, 105, 105);
     transition:0.5s;
@@ -444,12 +444,12 @@ p2{
      z-index:101;
    }
    #logoi{
-     transition:0.3s;
-     position:fixed;
-     top:calc(0.1vh);
-     width:calc(5vw);
-     left:calc(46.5vw);
-     z-index:101;
+    transition:0.3s;
+    position:fixed;
+    top:calc(0.5vh);
+    width:calc(7vh);
+    left:calc(3.5vh);
+    z-index:101;
    }
    div.img img{
        display: block;
@@ -494,7 +494,7 @@ p2{
        position:relative;
        padding-bottom:5%;
        transition:0.5s;
-       margin-top:calc(10vh);
+       margin-top:calc(15vh);
        margin-left:10%;
    }
    div.threeparts div.mid{
@@ -505,7 +505,7 @@ p2{
     position:relative;
     transition:0.5s;
     margin-left:10%;
-    margin-top:calc(10vh);
+    margin-top:calc(15vh);
   }
    div.threeparts div.right{
     background-color: whitesmoke;
@@ -515,7 +515,7 @@ p2{
     position:relative;
     transition:0.5s;
     margin-left:10%;
-    margin-top:calc(10vh);
+    margin-top:calc(15vh);
   }
    .orgimg{
        width:100%;
@@ -554,19 +554,22 @@ p2{
 }
 .textfield{
    width:calc(60vw);
-   margin-left:calc(10vw);
+   margin-left:calc(9vw);
    padding-left:calc(10vw);
    padding-right:calc(10vw);
    padding-top:calc(1vw);
-   margin-top:calc(6vw);
-   height: calc(75vw);
+   margin-top:calc(16vw);
    background-color: whitesmoke;
    margin-bottom:calc(5vw);
+   padding-bottom:calc(5vh);
    margin-right:calc(5vw);
-   font-size:calc(1.3vw);
+   font-size:calc(1.4vh);
+   text-align: left;
 }
 .textfield h2{
- font-size:calc(1.5vw);
+  margin-top:calc(4vh);
+ font-size:calc(1.7vh);
+ text-align: center;
 }
 .textfield img{
  width:calc(80vw);
@@ -676,12 +679,12 @@ footer{
   position: relative;
  font-size:calc(1.2vw);
  height:calc(20vh);
- width:calc(98.8vw);
+ width:calc(104.5vw);
+ left:calc(-5vw);
  padding:calc(1vw);
  font-size: calc(2vh);
  text-align: center;
  margin-top:calc(5vh);
- margin-left:calc(-1vw);
  margin-bottom:calc(-1vw);
  background-color:whitesmoke;
 }
@@ -693,9 +696,5 @@ margin: auto;
 }
 footer a{
  color:black;
-}
-p2{
- font-size:calc(1vw);
- line-height:calc(1.5vw);
 }
 }
