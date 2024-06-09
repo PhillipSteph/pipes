@@ -8,7 +8,22 @@
 </head>
 
 <body>
+    <div id="site">
     <script src="script.js"></script>
+    <div class="topnav" id="topnav">
+        <a href="index.html" class="active"></a>
+        <div id="myLinks">
+            <span><a onclick="menu();" href="index.html#ml">Über Uns</a></span>
+            <span><a onclick="menu();"href="index.html#mm">Probe</a></span>
+            <span><a onclick="menu();"href="#">Medien</a></span>
+            <span><a onclick="menu();"href="index.html#mr">Termine</a></span>
+            <span><a onclick="menu();"href="index.html#mr">Kontakt</a></span>
+            <span><a onclick="menu();"href="intern/index.html">Intern</a></span>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="menu()">
+          <img src="menu.png">
+        </a>
+      </div>
     <div class="header">
         <span><a onclick="threeclose(); threeopen(1);" href="index.html#MAIN1">Über Uns</a></span>
         <span><a onclick="threeclose(); threeopen(2);" href="index.html#MAIN1">Probe</a></span>
@@ -18,52 +33,73 @@
         <span><a onclick="threeclose(); threeopen(3);" href="index.html#MAIN1">Kontakt</a></span>
         <span><a href="intern/index.html">Intern</a></span>
     </div>
-    <a href="index.html"><img alt="Pipes and Drums Bandlogo"id="logo"src="logo.png"></a>
+    <a href="index.html"><img alt="Pipes and Drums Bandlogo" id="logo"class="biglogo"src="logo.png"></a>
     <div id="mainpage">
         <div class="img">
-            <span class="title"> Eure Pipeband<br> im Herzen Deutschlands</span>
+            <span class="title" style="z-index:31;"> Eure Pipeband<br> im Herzen Deutschlands</span>
             <img src="frauentor.png">
         </div>
         <div class="seperator"></div>
         <div class="threeparts" id="MAIN1">
+            <div id="ml"></div>
             <div onclick="threeopen(1)" id="main1left" class="left">
                 <button class="closethree" id="closeleft">-</button>
                 <img rel="prefetch" class="orgimg"  id="thgimg1" src="bild1.jpg">
                 <h3>Über Uns</h3>
                 <div class="text">
                     <p1>
-                        Wir sind der Verein Pipes and Drums Unstruttal 2010 e.V.. Seit 2010 begeistern wir die Ohren vieler Menschen mit traditioneller schottischer Musik. Mit Dudelsack, Snare-, Tenor- und Basstrommel wiederspiegelt sich die schottische Kultur in deiner Nähe! Wir treten regelmäßig in Thüringen auf, jährlich z.B. bei der Mühlhäuser Stadtkirmes. Wir sind aber nicht zögernd bei Anfragen von weiter weg! Unter unserem E-Mail Postfach <a href="mailto:info@pipes-drums-unstruttal.de">info@pipes-drums-unstruttal.de</a> oder der Telefonnummer <a href="tel:01704130335">+491704130335</a> könnt ihr uns für euer nächstes Fest buchen.
-                    </p1>                
+                        Wir sind <b>Pipes and Drums Unstruttal.</b><br>
+                        Seit der Gründung 18. Dezember 2010 legen wir unseren Wert darauf, die Musik und die Kultur aus Schottland zu erlernen und weiter zu pflegen um diese einem Breiten Publikum in Form unserer Auftritte zu vermitteln. Unsere Repertoire besteht aus klassichen Märschen sowie auch aus Tänzen - "Schottland The Brave" und "Amazing Grace" dürfen hier natürlich nicht fehlen. 
+                        <br><br>
+                        Es gibt verschiedene öffentliche Auftritte, bei denen Ihr uns bestaunen könnt. 
+                        <br>Der nächste wäre: <br>
+                        23.08.2024 - 25.08.2024 Mühlhauser Stadtkirmes
+                                            </p1>                
                 </div>
             </div>
+            <div id="mm"></div>
             <div onclick="threeopen(2)"id="main1mid"class="mid">
                 <button class="closethree" id="closemid">-</button>
                 <img rel="prefetch" class="orgimg"  id="thgimg2" src="bild4.jpg">
                 <h3>Probe</h3>
                 <div class="text">
                     <p1>
-                        Unsere Übungsstunden finden jeden Samstag von 10:00 bis 12:00 im Mehrgenerationenhaus in Mühlhausen statt. Du hast Interesse daran, ein Instrument der schottischen Pipe Band zu erlernen? Dann bist du herzlich eingeladen, bei den nächsten Übungsstunden teilzunehmen. Eine Anmeldung ist nicht nötig, wobei es von Vorteil wäre, sich trotzdem zu melden, um nicht zufällig alleine da zu stehen! Die Adresse des Mehrgenerationenhaus ist Hinterm Neuen Brunnen 8, 99974 Mühlhausen/Thüringen. Die Teilnahme ist zuerst kostenlos, deshalb ist nicht zu zögern!
-                    </p1>
+                        Wollt Ihr erlernen, wie man die Great Highland Bagpipe oder Trommeln, egal ob Snare, Tenor oder Bass, im schottischen Stil zu spielen, dann kommt doch gerne zu unsern Übungsstunden. 
+                        Wir trainieren wöchentlich Samstag ab 10 Uhr im Mehrgenerationenhaus in Mühlhausen
+                        <br><br>
+                        Mehrgenerationenhaus “Geschwister Scholl”<br>
+                        Puschkinstraße 8<br>
+                        99974 Mühlhausen/Thüringen
+                        <br><br>
+                        Am besten Ihr meldet euch vorher via Telefon <a href="tel:+491704130335">+49⠀170⠀4130335</a> bei unserem Pipe Major Oliver Braun, damit wir Euch den bestmöglichen Einstieg in die schottische Musik bieten können. 
+                                            </p1>
                 </div>
             </div>
+            <div id="mr"></div>
             <div onclick="threeopen(3)"id="main1right" class="right">
                 <button class="closethree" id="closeright">-</button>
                 <img rel="prefetch" class="orgimg" id="thgimg3" src="bildkleiner.png">
                 <h3>Kontakt & Termine</h3>
                 <div class="text">
                     <p1>
-                        Zu erreichen sind wir unter unserem E-Mail Postfach <a href="mailto:info@pipes-drums-unstruttal.de">info@pipes-drums-unstruttal.de</a> oder der Telefonnummer <a href="tel:01704130335">+491704130335</a>. Hier könnt ihr uns für eure nächsten Events oder Feiern buchen oder andere Fragen zu unserem Verein stellen.<br> Dieses Jahr nehmen wir wiedermal an der Mühlhäuser Stadtkirmes teil. Beim Platzkonzert am Samstag, sowie beim Kirmesumzug am Sonntag könnt ihr unsere Musik live in Mühlhausen hören!
-                    </p1>
+                        Egal ob als Überraschung zur Hochzeit, Geburtstag oder Firmenfeier, als musikalische Unterstützung beim Whisk(e)y Tasting oder beim schottischen Abend oder andere Veranstaltungen, wir sind gerne ein Teil davon. 
+                        Oder wollt Ihr ein Teil unserer Band werden? 
+                        <br><br>
+                        Meldet euch gerne:<br>
+                        via Mail: <a href="mailto:Info@pipes-drums-unstruttal@gmail.de">Info@pipes-drums-unstruttal.de</a>
+                        <br>
+                        via Tel.: <a href="tel:01704130335">+49 170 4130335</a> bei unserem Pipe Major Oliver Braun.                    </p1>
                 </div>
             </div>
         </div>
+        <footer>
+            <hr>
+            <span><b><a href="index.html">Pipes and Drums Unstruttal</a></b></span>
+            <span><a href="impressum.html">Impressum und Datenschutz</a> </span>
+            <span><a href="tel:+491704130335">+49 170 4130335</a> </span>
+            <span><a href="mailto:info@pipes-drums-unstruttal.de">info@pipes-drums-unstruttal.de</a></span>
+        </footer>
     </div>
-<footer>
-    <hr>
-    <span><b>Pipes and Drums Unstruttal</b></span>
-    <span><a href="impressum.html">Impressum und Datenschutz</a> </span>
-    <span><a href="tel:01704130335">+49 170 4130335</a> </span>
-    <span><a href="mailto:info@pipes-drums-unstruttal.de">info@pipes-drums-unstruttal.de</a></span>
-</footer>
+</div>
 </body>
 </html>
