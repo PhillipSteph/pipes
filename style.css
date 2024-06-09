@@ -86,7 +86,7 @@
       position:fixed;
       top:calc(0.1vh);
       width:calc(5vw);
-      left:calc(46.5vw);
+      left:calc(46.7vw);
       z-index:101;
     }
     div.img img{
@@ -112,8 +112,7 @@
       height:calc(16vw);
       width:calc(102vw);
       margin-left:calc(-1vw);
-      margin-top:calc(10vh);
-      margin-bottom:calc(1vh);
+      margin-top:calc(10vw);
       background-color:whitesmoke;
     }
     div.threeparts{
@@ -363,7 +362,7 @@ p2{
     height:calc(8vh);
     z-index:32;
     box-shadow: 0px 3px 10px rgb(105, 105, 105);
-    transition:0.5s;
+    transition:0.4s;
   }
   
   /* Hide the links inside the navigation menu (except for logo/home) */
@@ -375,12 +374,11 @@ p2{
     height:60%;
     width:calc(20vh);
     z-index:10000;
-    transition:0.5s;
   }
   .topnav #myLinks span{
     display: block;
     width:100%;
-    letter-spacing: calc(0.5vh);
+    letter-spacing: calc(0.2vh);
   }
   
   /* Style navigation menu links */
