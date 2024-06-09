@@ -45,6 +45,12 @@
         font-size:calc(1.45vw);
         font-weight: 100;
         letter-spacing: calc(0.3vw);
+        border-bottom: solid 1px #FFFFFF00;
+        transition: 0.5s;
+    }
+    div.header span a:hover{
+        border-bottom: solid 1px white;
+        transition: 0.5s;
     }
       
     div.header::after {
