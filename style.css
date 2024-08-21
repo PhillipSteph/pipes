@@ -18,23 +18,23 @@
       display:none;
     }
     div.header {
-        height:calc(5vh);
-        width:calc(88vw);
-        background-color: #0a5807e2;
-        padding-left:calc(1vw);
-        padding-right:calc(1vw);
-        padding-top:calc(9vh);
-        margin-bottom:calc(-1vh);
-        margin-top:calc(-7.5vh);
-        margin-left:calc(5vw);
-        border-radius: calc(0.5vw);
-        margin-right:calc(5vw);
-        color:white;
-        top:0;
-        position:fixed;
-        left:0;
-        z-index:100;
-        }
+      height: calc(5vh);
+      width: calc(88vw);
+      background-color: #0a5807e2;
+      padding-left: calc(1vw);
+      padding-right: calc(1vw);
+      padding-top: calc(9vh);
+      margin-bottom: calc(-1vh);
+      margin-top: calc(-7.5vh);
+      border-radius: calc(0.5vw);
+      color: white;
+      top: 0;
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%); /* Centers the header horizontally */
+      z-index: 100;
+  }
+  
     div.header span{
       position:relative;
       margin-right:calc(3.1vw);
@@ -95,14 +95,17 @@
       left:calc(46.5vw);
       z-index:101;
     }
-    div.img img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        z-index: 30;
-        margin-top:calc(-1vh);
-        width:calc(85vw);
-    }
+    div.img img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top:calc(-1.5vh);
+      z-index: 30;
+      width: 90vw;
+      height: 101.5vh;
+      object-fit: cover; /* Ensures the image covers the container while maintaining aspect ratio */
+  }
+
     .title{
         position:absolute;
         font-size:calc(2vw + 2vh);
@@ -112,7 +115,7 @@
         letter-spacing: calc(0.3vw);
         line-height:calc(5vw);
         left:calc(13vw);
-        top: calc(18vw);
+        top: calc(24vw);
     }
     .seperator{
       height:calc(16vw);
