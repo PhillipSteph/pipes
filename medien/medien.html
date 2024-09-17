@@ -3,11 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Pipes and Drums Unstruttal Medien</title>
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="medien.css">
 </head>
 <body>
+    <a href="../index.html"><img alt="Pipes and Drums Bandlogo"id="logoi"src="../media/logo.png"></a>
+<script src="../script.js"></script>
+<div class="topnav" id="topnav">
+    <a href="../index.html" class="active"></a>
+    <div id="myLinks">
+        <span><a onclick="menu();" href="../index.html#ml">Über Uns</a></span>
+        <span><a onclick="menu();"href="../index.html#mm">Probe</a></span>
+        <span><a onclick="menu();"href="../medien/medien.html">Medien</a></span>
+        <span><a onclick="menu();"href="../index.html#mr">Termine</a></span>
+        <span><a onclick="menu();"href="../index.html#mr">Kontakt</a></span>
+        <span><a onclick="menu();"href="../intern/index.html">Intern</a></span>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="menu()">
+      <img src="../media/menu.png">
+    </a>
+  </div>
+<div class="header">
+    <span><a onclick=" threeclose(); threeopen(1);" href="../index.html#MAIN1">Über Uns</a></span>
+    <span><a onclick="threeclose(); threeopen(2);" href="../index.html#MAIN1">Probe</a></span>
+    <span><a href="../medien.html">Medien</a></span>
+    <span></span>
+    <span><a onclick="threeclose(); threeopen(3);" href="../index.html#MAIN1">Termine</a></span>
+    <span><a onclick="threeclose(); threeopen(3);" href="../index.html#MAIN1">Kontakt</a></span>
+    <span><a href="../intern/index.html">Intern</a></span>
+
+</div>
     <main>
-        <h1>Pipes and Drums Unstruttal Medien</h1>
+        <h1>Medien der Band</h1>
         <div class="gallery" id="gallery">
             
         </div>
@@ -17,6 +44,13 @@
             </div>
         </div>
     </main>
+    <footer>
+        <hr>
+        <span><b><a href="../index.html">Pipes and Drums Unstruttal</a></b></span>
+        <span><a href="../impressum.html">Impressum und Datenschutz</a> </span>
+        <span><a href="tel:+491704130335">+49 170 4130335</a> </span>
+        <span><a href="mailto:info@pipes-drums-unstruttal.de">info@pipes-drums-unstruttal.de</a></span>
+    </footer>
 <script>
     // Simulate image array (replace with real paths from your directory)
     const images = [
