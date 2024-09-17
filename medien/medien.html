@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pipes and Drums Unstruttal Medien</title>
+    <link rel="stylesheet" href="medien.css">
+</head>
+<body>
+    <main>
+        <h1>Pipes and Drums Unstruttal Medien</h1>
+        <div class="gallery" id="gallery">
+            
+        </div>
+        <div id="inspectimg">
+            <div id="imgininspectimg">
+                <img class="landscape" src="../media/bild2.jpg">
+            </div>
+        </div>
+    </main>
+<script>
+    // Simulate image array (replace with real paths from your directory)
+    const images = [
+            { src: "../media/bild6.jpg", type: "portrait" },
+            { src: "../media/bild.jpg", type: "landscape" },
+            { src: "../media/kirmes24.jpg", type: "landscape" },
+            { src: "../media/bild1.jpg", type: "landscape" },
+            { src: "../media/bild2.jpg", type: "landscape" },
+            { src: "../media/bild3.jpg", type: "landscape" },
+            { src: "../media/bild4.jpg", type: "landscape" },
+            { src: "../media/bild5.jpg", type: "landscape" },
+            { src: "../media/bild8.jpg", type: "landscape" },
+            { src: "../media/bild9.jpg", type: "landscape" },
+            { src: "../media/bild10.jpg", type: "landscape" },
+            { src: "../media/bild11.jpg", type: "landscape" },
+            { src: "../media/bild15.jpg", type: "portrait" },
+            { src: "../media/bild12.jpg", type: "landscape" },
+            { src: "../media/bild13.jpg", type: "landscape" },
+            { src: "../media/bild14.jpg", type: "landscape" },
+            { src: "../media/bild16.jpg", type: "landscape" },
+            { src: "../media/bildkleiner.png", type: "landscape" },
+            { src: "../media/peine19.jpg", type: "landscape" },
+        ];
+
+        const gallery = document.getElementById('gallery');
+
+        images.forEach(image => {
+            const img = document.createElement('img');
+            img.src = image.src;
+            img.alt = "Image";
+
+            // Add a class to portrait images to span them across two rows
+            if (image.type === 'portrait') {
+                img.classList.add('portrait');
+            }
+
+            // Add an event listener for click events
+            img.addEventListener('click', () => handleImageClick(image));
+
+            gallery.appendChild(img);
+        });
+
+        // Function to be executed when an image is clicked
+        function handleImageClick(image) {
+            const inspectImg = document.getElementById('inspectimg');
+            const imgInInspectImg = document.getElementById('imgininspectimg').querySelector('img');
+
+            // Update the image src and class
+            imgInInspectImg.src = image.src;
+            imgInInspectImg.className = image.type; // Update class to 'portrait' or 'landscape'
+
+            // Show the inspect image container
+            inspectImg.style.display = 'flex';
+        }
+
+        // Hide inspect image container when clicked
+        document.getElementById('inspectimg').addEventListener('click', () => {
+            document.getElementById('inspectimg').style.display = 'none';
+        });
+</script>
+</body>
+</html>
