@@ -1,8 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
+    overflow-x:hidden;
+    font-family:Arial;
+    padding-top:0;
+    letter-spacing: calc(0.09vw);
+    position:relative;
 }
 
 .gallery {
@@ -78,6 +79,9 @@ main{
     height:auto;
 }
 @media (max-width: 768px) {
+    body{
+
+    }
     .gallery {
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     }
