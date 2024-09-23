@@ -66,7 +66,196 @@ main{
     width:70vw;
     height:auto;
 }
+@media all and (orientation:landscape){
+    .topnav {
+        display:none;
+      }
+      .topnav #myLinks {
+        display: none;
+      }
+      .topnav a {
+        display:none;
+      }
+      .topnav img {
+        display:none;
+      }
+      div.header {
+        height: calc(5vh);
+        width: calc(88vw);
+        background-color: #0a5807e2;
+        padding-left: calc(1vw);
+        padding-right: calc(1vw);
+        padding-top: calc(9vh);
+        margin-bottom: calc(-1vh);
+        margin-top: calc(-7.5vh);
+        border-radius: calc(0.5vw);
+        color: white;
+        top: 0;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%); /* Centers the header horizontally */
+        z-index: 100;
+    }
+    
+      div.header span{
+        position:relative;
+        margin-right:calc(3.1vw);
+        margin-left:calc(3.1vw);
+      }
+      .closethree{
+        position:absolute;
+        display:none;
+        cursor:pointer;
+        padding: 0;
+        border: none;
+        background: none;
+        font-size: calc(4vw);
+        left:calc(2vw);
+        color: grey;
+      }
+      div.header span a{
+          text-shadow: calc(0.1vw) calc(0.1vw) #000000;
+          color:white;
+          text-decoration: none;
+          font-size:calc(1.45vw);
+          font-weight: 100;
+          letter-spacing: calc(0.3vw);
+          border-bottom: solid 1px #FFFFFF00;
+          transition: 0.5s;
+      }
+      div.header span a:hover{
+          border-bottom: solid 1px white;
+          transition: 0.5s;
+      }
+        
+      div.header::after {
+          content: " ";
+          display: inline-block;
+          width: calc(100vw);
+      }
+      .biglogo{
+        transition:0.3s;
+        position:fixed;
+        top:calc(2vh);
+        width:calc(12vw);
+        left:calc(43.5vw);
+        z-index:101;
+      }
+      .smalllogo{
+        transition:0.3s;
+        position:fixed;
+        top:calc(0.1vh);
+        width:calc(5vw);
+        left:calc(46.7vw);
+        z-index:101;
+      }
+      #logoi{
+        transition:0.3s;
+        position:fixed;
+        top:calc(0.1vh);
+        width:calc(5vw);
+        left:calc(46.5vw);
+        z-index:101;
+      }
+}
 @media all and (orientation:portrait)  {
+    #topnav{
+        display:block;
+        height:calc(8vh);
+       }
+       .topnav {
+        background-color: #FFFFFF;
+        position: fixed;
+        top:calc(0vh);
+        width:calc(104.5vw);
+        left:calc(-2.5vw);
+        height:calc(8vh);
+        z-index:32;
+        box-shadow: 0px 3px 10px rgb(105, 105, 105);
+        transition:0.5s;
+      }
+      
+      /* Hide the links inside the navigation menu (except for logo/home) */
+      .topnav #myLinks {
+        display: none;
+        position: absolute;
+        bottom:calc(12vh);
+        left:calc(8vh);
+        height:60%;
+        width:calc(20vh);
+        z-index:10000;
+        transition:0.5s;
+      }
+      .topnav #myLinks span{
+        display: block;
+        width:100%;
+        letter-spacing: calc(0.5vh);
+      }
+      
+      /* Style navigation menu links */
+      .topnav a {
+        color: black;
+        padding: 14px 16px;
+        font-size: calc(4vw);
+        float:left;
+        display: block;
+      }
+      
+      /* Style the hamburger menu */
+      .topnav img {
+        background-color: #00000000;
+        display: block;
+        position: absolute;
+        height:calc(5vh);
+        width:calc(5vh);
+        right: calc(7vw);
+        top: calc(1.4vh);
+      }
+       div.header {
+        display: none;
+           }
+       div.header span{
+         position:relative;
+         margin-right:calc(3.1vw);
+         margin-left:calc(3.1vw);
+       }
+    
+       div.header span a{
+           text-shadow: calc(0.1vw) calc(0.1vw) #000000;
+           color:white;
+           text-decoration: none;
+           font-size:calc(1.45vw);
+           font-weight: 100;
+           letter-spacing: calc(0.3vw);
+       }
+         
+       div.header::after {
+           content: " ";
+           display: inline-block;
+           width: calc(100vw);
+       }
+       #logo{
+         transition:0.3s;
+         position:fixed;
+         top:calc(0.5vh);
+         width:calc(7vh);
+         left:calc(3.5vh);
+         z-index:101;
+       }
+       #logoi{
+        transition:0.3s;
+        position:fixed;
+        top:calc(0.5vh);
+        width:calc(7vh);
+        left:calc(3.5vh);
+        z-index:101;
+       }
+       ul, li{
+        list-style-type: none;
+        font-size: calc(1.3vw);
+        line-height:calc(1.7vw);
+        padding: 0;
+        }
     .gallery {
         column-count: 1;
     }

@@ -419,17 +419,7 @@ p2{
      margin-right:calc(3.1vw);
      margin-left:calc(3.1vw);
    }
-   .closethree{
-     position:absolute;
-     display:none;
-     cursor:pointer;
-     padding: 0;
-     border: none;
-     background: none;
-     font-size: calc(4vw);
-     left:calc(2vw);
-     color: grey;
-   }
+
    div.header span a{
        text-shadow: calc(0.1vw) calc(0.1vw) #000000;
        color:white;
@@ -460,6 +450,17 @@ p2{
     left:calc(3.5vh);
     z-index:101;
    }
+   .closethree{
+    position:absolute;
+    display:none;
+    cursor:pointer;
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: calc(4vw);
+    left:calc(2vw);
+    color: grey;
+  }
    div.img img{
        display: block;
        margin-left: calc(-2.2vw);
@@ -600,7 +601,7 @@ h4{
 ul, li{
 list-style-type: none;
 font-size: calc(1.3vw);
-line-height:calc(1.7vw);
+line-height:auto;
 padding: 0;
 }
 .leftimg img{
