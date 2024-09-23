@@ -1,9 +1,10 @@
 body {
     overflow-x:hidden;
-    font-family:Arial;
+    font-family:Calibri, Helvetica, sans-serif;
     padding-top:0;
     letter-spacing: calc(0.09vw);
     position:relative;
+    width: 100%;
 }
 
 .gallery {
@@ -20,6 +21,10 @@ body {
 }
 h1{
     text-align: center;
+    font-size: calc(2vw);
+    font-family: Calibri, Helvetica, sans-serif;
+    letter-spacing: calc(0.3vw);
+    font-weight: 200;
 }
 main{
     margin-top:10vh;
@@ -60,10 +65,10 @@ main{
 }
 #imgininspectimg .portrait{
     width:auto;
-    height:60vh;
+    height:90vh;
 }
 #imgininspectimg .landscape{
-    width:70vw;
+    width:65vw;
     height:auto;
 }
 @media all and (orientation:landscape){
@@ -156,6 +161,23 @@ main{
         width:calc(5vw);
         left:calc(46.5vw);
         z-index:101;
+      }
+      footer{
+        font-size:calc(1.2vw);
+        height:calc(8vh);
+        width:calc(102vw);
+        padding:calc(1vw);
+        margin-left:calc(-1vw);
+        margin-top:calc(15vh);
+        margin-bottom:calc(-1vw);
+        background-color:whitesmoke;
+      }
+      footer span{
+        margin-right:calc(4.2vw);
+        margin-left:calc(4.2vw);
+      }
+      footer a{
+        color:black;
       }
 }
 @media all and (orientation:portrait)  {
@@ -256,12 +278,41 @@ main{
         line-height:calc(1.7vw);
         padding: 0;
         }
+        footer{
+          position: relative;
+         font-size:calc(1.2vw);
+         height:calc(20vh);
+         width:calc(104.5vw);
+         left:calc(-5vw);
+         padding:calc(1vw);
+         font-size: calc(2vh);
+         text-align: center;
+         margin-top:calc(5vh);
+         margin-bottom:calc(-1vw);
+         background-color:whitesmoke;
+        }
+        footer span{
+        margin: auto;
+         display: block;
+         line-height:calc(4vh);
+         width:60%;
+        }
+        footer a{
+         color:black;
+        }
     .gallery {
         column-count: 1;
     }
     .gallery img:hover {
         transform: scale(1);
     }
+    .gallery img{
+      width: 100%;
+      cursor: pointer;
+      transition:0.3s;
+      margin:0%;
+      margin-top: 2%;
+  }
     #imgininspectimg img {
         max-width: 100%;
     }
@@ -272,5 +323,9 @@ main{
     #imgininspectimg .landscape{
         width:95vw;
         height:auto;
+    }
+    h1{
+      font-size: calc(3vh);
+      margin-top: calc(0.5vh);
     }
 }
